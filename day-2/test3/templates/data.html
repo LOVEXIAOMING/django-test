@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="{% url 'news:data' %}" method="post">
+    {% csrf_token %}
+    年份: <input type="text" name="years">
+    月份: <input type="text" name="months">
+    日期: <input type="text" name="days">
+    <input type="submit">
+</form>
+</body>
+</html>
